@@ -6,12 +6,14 @@ import pisaa from "./assets/pissa.png";
 
 function Banner() {
   return (
-    <div className="container py-14 relative">
-      <div className="relative z-20">
+    <div className="relative flex flex-col items-center justify-center h-screen py-14 bg-[#ffe4c4]">
+      {" "}
+      {/* Changed background color */}
+      <div className="relative z-20 text-center max-w-4xl mx-auto">
         <h1
           data-aos="fade-up"
           data-aos-delay="300"
-          className="py-8 tracking-wider text-2xl font-semibold text-dark text-center"
+          className="py-8 tracking-wider text-2xl font-semibold text-dark"
         >
           Taste the Juicy Difference
         </h1>
@@ -67,39 +69,39 @@ function Banner() {
         </div>
       </div>
       {/* Background Burger Images */}
-      <div className="absolute top-5 -left-16 sm:bottom-0 sm:left-0 opacity-50 sm:opacity-100">
+      <div className="absolute top-1/4 left-1/4 opacity-50">
         <img
           src={pisa}
           alt="Juicy Burger"
-          className="max-w-[100px] object-cover" // Added object-fit
+          className="max-w-[100px] object-cover"
         />
       </div>
-      <div className="absolute -bottom-16 -left-16 sm:bottom-0 sm:left-0 opacity-50 sm:opacity-100">
+      <div className="absolute bottom-1/4 left-1/4 opacity-50">
         <img
           src={avocado}
           alt="Burger Ingredients"
-          className="max-w-[80px] object-cover" // Added object-fit
+          className="max-w-[80px] object-cover"
         />
       </div>
-      <div className="absolute top-10 -right-16 sm:right-20 opacity-50 sm:opacity-100">
+      <div className="absolute top-1/4 right-1/4 opacity-50">
         <img
           src={pisa}
           alt="Delicious Burger"
-          className="max-w-[100px] object-cover" // Added object-fit
+          className="max-w-[100px] object-cover"
         />
       </div>
-      <div className="hidden sm:block absolute bottom-0 right-0">
+      <div className="hidden sm:block absolute bottom-1/4 right-1/4 opacity-50">
         <img
           src={pisaa}
           alt="Burger Toppings"
-          className="max-w-[100px] object-cover" // Added object-fit
+          className="max-w-[100px] object-cover"
         />
       </div>
-      <div className="absolute top-1/2 -translate-y-1/2 left-1/3 -translate-x-1/2 opacity-50 sm:opacity-100">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-50">
         <img
           src={pisa}
           alt="Burger Delight"
-          className="max-w-[100px] object-cover" // Added object-fit
+          className="max-w-[100px] object-cover"
         />
       </div>
     </div>

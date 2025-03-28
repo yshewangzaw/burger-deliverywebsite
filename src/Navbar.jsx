@@ -1,37 +1,32 @@
 import React from "react";
 import { FaCaretDown, FaUser } from "react-icons/fa";
-import LogoImage from "./assets/logo1.png"; // Replace with the path to your logo image
+import LogoImage from "./assets/logo1.png";
+import { Link } from "react-router-dom";
 
 function TestNavbar({ HandlePopup }) {
   return (
     <div
-      className="bg-[#FFFAF0] shadow-[0_2px_4px_rgba(0,0,0,0.1)] relative z-50" // Set z-index here
+      className="bg-[#FFFAF0] shadow-[0_2px_4px_rgba(0,0,0,0.1)] relative z-50"
       data-aos="fade-up"
     >
       <div className="max-w-[1200px] mx-auto flex justify-between items-center p-4">
-        {/* Logo Section */}
         <div>
-          <img
-            src={LogoImage}
-            alt="Logo"
-            className="h-30" // Adjust height as needed
-          />
+          <img src={LogoImage} alt="Logo" className="h-30" />
         </div>
 
-        {/* Navlinks Section */}
         <div>
           <ul className="flex items-center gap-8 list-none">
             <li>
-              <a
-                href="#home"
+              <Link
+                to="/" // Link to home
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a
-                href="#about"
+                href="#about" // Anchor link to About section
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
               >
                 About
@@ -39,60 +34,49 @@ function TestNavbar({ HandlePopup }) {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#contact" // Anchor link to Contact section
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
               >
                 Contact
               </a>
             </li>
 
-            {/* Dropdown Section */}
             <li className="relative group">
-              <a className="flex items-center gap-1 text-[#8B4513] cursor-pointer">
-                Dropdown{" "}
+              <div className="flex items-center gap-1 text-[#8B4513] cursor-pointer">
+                Menu{" "}
                 <FaCaretDown className="transition-transform duration-300 group-hover:rotate-180" />
-              </a>
+              </div>
 
-              {/* Dropdown Menu */}
               <div className="absolute z-50 hidden w-48 bg-white text-black shadow-lg py-2 px-2 rounded-md group-hover:block">
                 <ul>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/burgers"
                       className="block px-2 py-2 hover:bg-[#FFE4B5] transition-colors duration-300"
                     >
                       Burgers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/specials"
                       className="block px-2 py-2 hover:bg-[#FFE4B5] transition-colors duration-300"
                     >
-                      Sides
-                    </a>
+                      Specials
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/promotions"
                       className="block px-2 py-2 hover:bg-[#FFE4B5] transition-colors duration-300"
                     >
-                      Drinks
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-2 py-2 hover:bg-[#FFE4B5] transition-colors duration-300"
-                    >
-                      Desserts
-                    </a>
+                      Promotions
+                    </Link>
                   </li>
                 </ul>
               </div>
             </li>
 
-            {/* User Account Button */}
             <li>
               <button
                 onClick={HandlePopup}

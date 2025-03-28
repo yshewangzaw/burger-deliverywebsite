@@ -12,7 +12,7 @@ const bgStyle = {
 
 function Hero() {
   return (
-    <div style={bgStyle} className="relative flex items-center">
+    <div style={bgStyle} className="flex items-center justify-center">
       <div className="container py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
           {/* Text Content Section */}

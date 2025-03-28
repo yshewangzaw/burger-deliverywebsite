@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -13,36 +14,29 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/" // Use Link for navigation to Home
                   className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/about" // Use Link for navigation to About
                   className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
                 >
                   About
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a
-                  href="#"
-                  className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
-                >
-                  Menu
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact" // Use Link for navigation to Contact
                   className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

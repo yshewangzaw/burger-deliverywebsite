@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TestNavbar from "./Navbar"; // Use the TestNavbar you created
 import Hero from "./Hero";
 import Banner from "./Banner";
 import WhyChoose from "./WhyChoose";
 import Aboutus from "./Aboutus";
 import Footer from "./Footer";
 import Popup from "./Popup";
+import Promotions from "./Promotion";
+import Burgers from "./Burgers";
+import Specials from "./Specials";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -16,6 +19,7 @@ function App() {
   const handlePopup = () => {
     setShowPopup(true);
   };
+
   useEffect(() => {
     Aos.init({
       offset: 100,
@@ -24,7 +28,6 @@ function App() {
       delay: 100,
     });
 
-    // Refresh AOS only if necessary
     const handleResize = () => Aos.refresh();
     window.addEventListener("resize", handleResize);
 
@@ -32,17 +35,31 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
-    <div className="overflow-x-hidden">
-      <Navbar HandlePopup={handlePopup} />
-      <Hero />
-      <Banner />
-      <WhyChoose />
-      <Aboutus HandlePopup={handlePopup} />
-      <Footer />
-      <Popup showPopup={showPopup} setShowPopup={setShowPopup} />{" "}
-      {/* Ensure Popup is used */}
-    </div>
+    <Router>
+      <div className="overflow-x-hidden">
+        <TestNavbar HandlePopup={handlePopup} />
+        <Routes>
+          <Route path="/promotions" element={<Promotions />} />
+          <Route path="/burgers" element={<Burgers />} />
+          <Route path="/specials" element={<Specials />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Banner />
+                <WhyChoose />
+                <Aboutus HandlePopup={handlePopup} />
+              </>
+            }
+          />
+        </Routes>
+        <Footer />
+        <Popup showPopup={showPopup} setShowPopup={setShowPopup} />
+      </div>
+    </Router>
   );
 }
 

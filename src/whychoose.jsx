@@ -3,7 +3,7 @@ import { FaBus } from "react-icons/fa";
 
 function WhyChoose() {
   return (
-    <div className="py-14 md:py-28 bg-gray-50">
+    <div className="py-14 md:py-28 bg-gray-50 flex justify-center items-center">
       <div className="container">
         {/* Heading Section */}
         <h1

@@ -30,7 +30,7 @@ function Aboutus({ HandlePopup }) {
           >
             <p className="text-gray-800 text-base md:text-lg">
               Welcome to{" "}
-              <span className="font-bold text-fuchsia-400">Burger Haven</span>,
+              <span className="font-bold text-fuchsia-400">Kiya Burger</span>,
               where we believe that a great burger is not just a meal but a
               celebration of flavor. Our mission is to deliver mouth-watering
               burgers straight to your door, ensuring that every bite is a
