@@ -3,11 +3,11 @@ import burger from "./assets/burger2.png";
 import Button from "./button";
 
 const bgStyle = {
-  backgroundColor: "#ffebcd", // Light color for a warm and inviting feel
+  backgroundColor: "#ffebcd",
   width: "100%",
-  height: "100vh", // Full viewport height
-  position: "relative", // Ensure it's positioned correctly
-  zIndex: 10, // Lower than the navbar
+  height: "100vh",
+  position: "relative",
+  zIndex: 10,
 };
 
 function Hero() {
@@ -61,8 +61,8 @@ function Hero() {
         >
           <Button
             style={{
-              backgroundColor: "#D2691E", // Match the navbar logo color
-              color: "#fff", // White text for contrast
+              backgroundColor: "#D2691E",
+              color: "#fff",
             }}
             className="hover:bg-[#C65D1E] transition duration-300 px-6 py-2 rounded-lg"
           >

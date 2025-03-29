@@ -8,7 +8,7 @@ const bgStyle = {
   backgroundPosition: "center",
   backgroundSize: "cover",
   width: "100%",
-  height: "100vh", // Full viewport height
+  height: "100vh",
 };
 
 function Aboutus({ HandlePopup }) {

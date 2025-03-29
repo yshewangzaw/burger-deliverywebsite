@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar, FaCoffee, FaHamburger, FaClock } from "react-icons/fa"; // Import icons
+import { FaStar, FaCoffee, FaHamburger, FaClock } from "react-icons/fa";
 
 const Promotions = () => {
   const promotions = [
@@ -8,26 +8,26 @@ const Promotions = () => {
       title: "Buy One Get One Free!",
       description:
         "Enjoy a buy one get one free offer on all burgers this weekend!",
-      icon: <FaHamburger className="text-3xl text-white" />, // Icon for the promotion
+      icon: <FaHamburger className="text-3xl text-white" />,
     },
     {
       id: 2,
       title: "20% Off on Sides",
       description: "Get 20% off on all side orders with any burger purchase.",
-      icon: <FaStar className="text-3xl text-white" />, // Icon for the promotion
+      icon: <FaStar className="text-3xl text-white" />,
     },
     {
       id: 3,
       title: "Free Drink with Every Meal",
       description: "Order any meal and get a free drink of your choice.",
-      icon: <FaCoffee className="text-3xl text-white" />, // Icon for the promotion
+      icon: <FaCoffee className="text-3xl text-white" />,
     },
     {
       id: 4,
       title: "Happy Hour Special",
       description:
         "Join us from 4 PM to 6 PM for special prices on selected drinks.",
-      icon: <FaClock className="text-3xl text-white" />, // Icon for the promotion
+      icon: <FaClock className="text-3xl text-white" />,
     },
   ];
 
@@ -42,8 +42,8 @@ const Promotions = () => {
             key={promo.id}
             className="border p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
             style={{
-              backgroundColor: "#FFFAF0", // Light background color
-              borderColor: "#D2691E", // Accent border color
+              backgroundColor: "#FFFAF0",
+              borderColor: "#D2691E",
             }}
           >
             <div className="flex items-center mb-4">

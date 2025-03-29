@@ -1,6 +1,4 @@
 import React from "react";
-
-// Make sure to import images at the top if you're using ES6 imports
 import burger2 from "./assets/burger2.png";
 import burgerrr from "./assets/burgerrr.jpeg";
 import burger1 from "./assets/burger1.png";
@@ -13,27 +11,27 @@ const Burgers = () => {
       title: "Classic Cheeseburger",
       description:
         "A classic cheeseburger with lettuce, tomato, onion, and our special sauce.",
-      image: burger2, // Use the imported image
+      image: burger2,
     },
     {
       id: 2,
       title: "BBQ Bacon Burger",
       description:
         "A delicious burger topped with BBQ sauce, crispy bacon, and onion rings.",
-      image: burgerrr, // Use the imported image
+      image: burgerrr,
     },
     {
       id: 3,
       title: "Mushroom Swiss Burger",
       description:
         "Juicy beef patty topped with sautéed mushrooms and Swiss cheese.",
-      image: burger1, // Use the imported image
+      image: burger1,
     },
     {
       id: 4,
       title: "Plant-Based Burger",
       description: "A plant-based patty served with all the classic toppings.",
-      image: burgerr, // Use the imported image
+      image: burgerr,
     },
   ];
 

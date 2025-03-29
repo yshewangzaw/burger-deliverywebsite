@@ -1,10 +1,10 @@
 import React from "react";
 
 // Import images
-import chefsSpecial from "./assets/chefsSpecial.jpg"; // Correct path
-import spicyChicken from "./assets/spicyChicken.jpg"; // Correct path
-import veggieDelight from "./assets/veggieDelight.jpg"; // Correct path
-import fishTacos from "./assets/fishTacos.jpg"; // Correct path
+import chefsSpecial from "./assets/chefsSpecial.jpg";
+import spicyChicken from "./assets/spicyChicken.jpg";
+import veggieDelight from "./assets/veggieDelight.jpg";
+import fishTacos from "./assets/fishTacos.jpg";
 
 const Specials = () => {
   const specials = [
@@ -13,28 +13,28 @@ const Specials = () => {
       title: "Chef's Special Burger",
       description:
         "A juicy beef patty topped with cheddar cheese, crispy bacon, and our special sauce.",
-      image: chefsSpecial, // Use the imported image
+      image: chefsSpecial,
     },
     {
       id: 2,
       title: "Spicy Chicken Sandwich",
       description:
         "Crispy chicken breast with spicy mayo, lettuce, and pickles.",
-      image: spicyChicken, // Use the imported image
+      image: spicyChicken,
     },
     {
       id: 3,
       title: "Veggie Delight",
       description:
         "Grilled vegetables with hummus on a toasted bun, served with a side salad.",
-      image: veggieDelight, // Use the imported image
+      image: veggieDelight,
     },
     {
       id: 4,
       title: "Fish Tacos",
       description:
         "Three soft tacos filled with grilled fish, shredded cabbage, and lime crema.",
-      image: fishTacos, // Use the imported image
+      image: fishTacos,
     },
   ];
 

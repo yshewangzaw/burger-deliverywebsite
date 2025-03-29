@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-[#FFFAF0] py-8 border-t border-[#D2691E]/20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
-          {/* Links Section */}
+          {/* Quick Links Section */}
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold mb-3 text-[#D2691E]">
               Quick Links
@@ -15,7 +15,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/" // Use Link for navigation to Home
+                  to="/"
                   className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
                 >
                   Home
@@ -23,19 +23,18 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/about" // Use Link for navigation to About
+                  to="/about"
                   className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
                 >
-                  About
+                  About Us
                 </Link>
               </li>
-
               <li>
                 <Link
-                  to="/contact" // Use Link for navigation to Contact
+                  to="/contact"
                   className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -46,26 +45,34 @@ const Footer = () => {
             <h2 className="text-lg font-bold mb-3 text-[#D2691E]">Follow Us</h2>
             <div className="flex justify-center space-x-5">
               <a
-                href="#"
+                href="https://www.facebook.com"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaFacebook size={22} />
               </a>
               <a
-                href="#"
+                href="https://www.twitter.com"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaTwitter size={22} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaInstagram size={22} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin size={22} />
               </a>
@@ -101,9 +108,10 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Copyright Section */}
         <div className="mt-8 text-center pt-6 border-t border-[#D2691E]/30">
           <p className="text-sm text-[#8B4513]">
-            &copy; {new Date().getFullYear()} kiyaburger
+            &copy; {new Date().getFullYear()} Kiya Burger
           </p>
         </div>
       </div>

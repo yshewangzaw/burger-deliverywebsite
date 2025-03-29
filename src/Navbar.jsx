@@ -31,28 +31,26 @@ function TestNavbar({ HandlePopup }) {
               </Link>
             </li>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
-
             <li className="relative group">
               <div className="flex items-center gap-1 text-[#8B4513] cursor-pointer">
                 Menu{" "}
                 <FaCaretDown className="transition-transform duration-300 group-hover:rotate-180" />
               </div>
-
               <div className="absolute z-50 hidden w-48 bg-white text-black shadow-lg py-2 px-2 rounded-md group-hover:block">
                 <ul>
                   <li>
@@ -82,14 +80,12 @@ function TestNavbar({ HandlePopup }) {
                 </ul>
               </div>
             </li>
-
             <li>
               <button
                 onClick={HandlePopup}
                 className="flex items-center gap-2 bg-[#D2691E] text-white h-10 px-4 rounded-lg transition-transform duration-300 hover:scale-105"
               >
-                <FaUser />
-                My Account
+                <FaUser /> My Account
               </button>
             </li>
           </ul>
@@ -121,22 +117,22 @@ function TestNavbar({ HandlePopup }) {
               </Link>
             </li>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="text-[#8B4513] hover:text-[#D2691E] transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -173,8 +169,7 @@ function TestNavbar({ HandlePopup }) {
                 }}
                 className="flex items-center gap-2 bg-[#D2691E] text-white h-10 px-4 rounded-lg transition-transform duration-300 hover:scale-105"
               >
-                <FaUser />
-                My Account
+                <FaUser /> My Account
               </button>
             </li>
           </ul>

@@ -61,8 +61,8 @@ function Banner() {
         >
           <Button
             style={{
-              backgroundColor: "#D2691E", // Match the navbar logo color
-              color: "#fff", // White text for contrast
+              backgroundColor: "#D2691E",
+              color: "#fff",
             }}
             className="py-2 px-4 rounded-lg transition duration-300 hover:bg-[#C65D1E]"
           >
